@@ -53,9 +53,13 @@
 
 # 实验结果
 训练完成后，会在 results/ 目录下自动生成：
+
 train_loss_curves.png —— 各层数配置下的训练曲线
+
 val_loss_curves.png —— 各层数配置下的验证曲线
+
 final_loss_curves.png —— 训练 & 验证曲线并列展示
+
 loss_一层编码器解码器.csv、loss_二层编码器解码器.csv 等 —— 每个模型的 loss 记录
 ![img.png](img.png)
 
@@ -68,4 +72,5 @@ loss_一层编码器解码器.csv、loss_二层编码器解码器.csv 等 ——
 日期：2025年11月
 
 版本：v1.0
+
 
