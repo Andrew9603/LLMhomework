@@ -1,6 +1,6 @@
 # 项目简介
 
-本项目基于手工实现的 Transformer 模型，旨在帮助开发者深入理解 Transformer 的核心组件，包括多头注意力（Multi-Head Attention）、位置编码（Positional Encoding）、残差连接与层归一化（Residual + LayerNorm）、位置前馈网络（Position-wise Feed-Forward Network）等。
+本项目基于手工实现的 Transformer 模型，深入理解 Transformer 的核心组件，包括多头注意力（Multi-Head Attention）、位置编码（Positional Encoding）、残差连接与层归一化（Residual + LayerNorm）、位置前馈网络（Position-wise Feed-Forward Network）等。
 
 通过在小规模文本建模任务（字符级文本生成、IWSLT 2017 英德翻译任务）上的实验，本项目验证了各组件的功能与必要性，并提供了完整的训练、评估及消融实验流程。
 
@@ -65,4 +65,5 @@ loss_一层编码器解码器.csv、loss_二层编码器解码器.csv 等 ——
 
 作者：闫本旭
 日期：2025年11月
+
 版本：v1.0
