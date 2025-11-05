@@ -1,20 +1,8 @@
-# 项目结构
+# 项目简介
+本项目基于手工实现的 Transformer 模型，旨在帮助开发者深入理解 Transformer 的核心组件，包括多头注意力（Multi-Head Attention）、位置编码（Positional Encoding）、残差连接与层归一化（Residual + LayerNorm）、位置前馈网络（Position-wise Feed-Forward Network）等。  
 
+通过在小规模文本建模任务（字符级文本生成、IWSLT 2017 英德翻译任务）上的实验，本项目验证了各组件的功能与必要性，并提供了完整的训练、评估及消融实验流程。  
 
-Transformer-NMT/
-│
-├── src/
-│   ├── dataset.py         # 数据加载与编码
-│   ├── model.py           # Transformer 模型
-│   ├── train.py           # 训练脚本（主程序）
-│
-├── requirements.txt
-├── scripts/
-│   └── run.sh             # 训练启动脚本
-│
-├── results/               # 自动生成训练结果与图表
-│
-└── README.md
 
 # 硬件要求
 
@@ -28,7 +16,17 @@ Transformer-NMT/
 # 数据集
 
 默认使用 IWSLT2017 英德翻译数据集：
+训练集：10000 条样本
+
+验证集：2000 条样本
+
+英文序列长度限制：64
+
+德文序列长度限制：32
+
+文本预处理使用 Hugging Face MarianTokenizer 进行分词和编码。
 `load_dataset("iwslt2017", "iwslt2017-en-de")`
+
 
 # 运行命令
 进入项目目录后，执行：
@@ -67,4 +65,5 @@ loss_一层编码器解码器.csv、loss_二层编码器解码器.csv 等 ——
 
 作者：闫本旭
 日期：2025年11月
+
 版本：v1.0
